@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --orange: #f5a623;
+    --surface: #252525;
+    --muted: #a9a9a9;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 46px 5%;
+    background: #111 url(image/zel0.png) center / cover fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.contact-page {
+    max-width: 1040px;
+    margin: auto;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #ddd;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: var(--orange);
+}
+
+.contact-heading {
+    max-width: 650px;
+    padding: 70px 0 42px;
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: var(--orange);
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.contact-heading h1 {
+    margin: 0 0 16px;
+    font-size: clamp(2.8rem, 7vw, 5.4rem);
+    line-height: 1;
+}
+
+.contact-heading h1 span {
+    color: var(--orange);
+}
+
+.contact-heading > p:last-child {
+    max-width: 520px;
+    margin: 0;
+    color: #c9c9c9;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 112px;
+    padding: 22px;
+    color: white;
+    background: rgba(37, 37, 37, .95);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: border-color .2s, transform .2s, background .2s;
+}
+
+.contact-card:hover {
+    background: #2d2d2d;
+    border-color: var(--orange);
+    transform: translateY(-4px);
+}
+
+.social-icon {
+    display: grid;
+    width: 54px;
+    height: 54px;
+    flex: 0 0 54px;
+    place-items: center;
+    color: var(--ink, #171717);
+    background: var(--orange);
+    border-radius: 14px;
+    font-size: 1.5rem;
+}
+
+.contact-card > span:nth-child(2) {
+    display: grid;
+    gap: 7px;
+    min-width: 0;
+}
+
+.contact-card strong {
+    font-size: 1.1rem;
+}
+
+.contact-card small {
+    overflow: hidden;
+    color: var(--muted);
+    font-size: .9rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.open-icon {
+    margin-left: auto;
+    color: var(--orange);
+    font-size: .85rem;
+}
+
+.contact-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 52px;
+    color: var(--muted);
+}
+
+.contact-footer i {
+    color: var(--orange);
+    font-size: 1.3rem;
+}
+
+.contact-footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 28px 4%;
+        background-attachment: scroll;
+    }
+
+    .contact-heading {
+        padding: 52px 0 30px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-footer {
+        margin-top: 34px;
+    }
+}

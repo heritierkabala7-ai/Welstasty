@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander maintenant | WELtasty</title>
+    <link rel="stylesheet" href="commander.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <main class="order-layout">
+        <section class="order-intro">
+            <a class="back-link" href="produit.html"><i class="fa-solid fa-arrow-left"></i> Retour au menu</a>
+            <p class="eyebrow">WELtasty à la maison</p>
+            <h1>Votre commande,<br><span>tout simplement.</span></h1>
+            <p class="intro-text">Remplissez vos informations et nous préparons votre repas avec soin.</p>
+            <div class="order-benefit"><i class="fa-solid fa-fire-flame-curved"></i><span><strong>Préparé avec attention</strong><small>Des produits frais, une cuisine généreuse.</small></span></div>
+            <div class="order-benefit"><i class="fa-solid fa-motorcycle"></i><span><strong>Livraison rapide</strong><small>Votre repas arrive chaud à l’adresse indiquée.</small></span></div>
+        </section>
+
+        <section class="order-panel">
+            <div class="panel-heading"><div><p class="eyebrow">Étape 1 sur 1</p><h2>Finaliser la commande</h2></div><i class="fa-solid fa-bag-shopping"></i></div>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <div class="form-grid">
+                        <label for="nom">Nom<input id="nom" name="nom" type="text" required></label>
+                        <label for="prenom">Prénom<input id="prenom" name="prenom" type="text" required></label>
+                        <label for="numero">Numéro de téléphone<input id="numero" name="numero" type="tel" required></label>
+                        <label for="heure">Heure souhaitée<input id="heure" name="heure" type="time"></label>
+                        <label class="full-width" for="adresse">Adresse de livraison<input id="adresse" name="adresse" type="text" required></label>
+                        <label class="full-width" for="instructions">Instructions spéciales<textarea id="instructions" name="instructions" rows="3" placeholder="Ex. : sans oignons, étage..."></textarea></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Paiement</legend>
+                    <label class="full-width" for="prix">Prix total<input id="prix" name="prix" type="text" placeholder="À confirmer" readonly></label>
+                    <div class="payment-options">
+                        <button type="button"><i class="fa-solid fa-money-bill-wave"></i> Espèces</button>
+                        <button type="button"><i class="fa-regular fa-credit-card"></i> Carte bancaire</button>
+                        <button type="button"><i class="fa-solid fa-mobile-screen-button"></i> Mobile money</button>
+                    </div>
+                    <label class="full-width" for="mobile-money">Opérateur mobile money<select id="mobile-money" name="mobile-money"><option value="">Sélectionner un opérateur</option><option>M-pesa</option><option>Orange Money</option><option>Airtel Money</option><option>AFRImoney</option></select></label>
+                </fieldset>
+                <button class="confirm-button" type="submit"><i class="fa-solid fa-check"></i> Confirmer ma commande</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
