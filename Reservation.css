@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 40px 5%;
-    background: linear-gradient(rgba(10, 10, 10, .48), rgba(10, 10, 10, .62)), url(image/zel2\ (3).png) center / cover fixed;
+    background: linear-gradient(rgba(10, 10, 10, .48), rgba(10, 10, 10, .62)), url("image/zel2 (3).png") center / cover fixed;
     color: var(--text);
     font-family: Arial, sans-serif;
 }
